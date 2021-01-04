@@ -4,23 +4,26 @@ import { AboutComponent} from './about/about.component';
 import { ChampionsComponent} from './champions/champions.component';
 import { HomeComponent} from './home/home.component';
 import { StudentsComponent } from './students/students.component';
+import { PartnersComponent } from './partners/partners.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactComponent } from './contact/contact.component';
+import { CommunitiesComponent } from './communities/communities.component';
+import { CorporateComponent } from './corporate/corporate.component';
+import { AcademicComponent } from './academic/academic.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'champions', component: ChampionsComponent },
   { path: 'students', component: StudentsComponent },
+  { path: 'partner', component: PartnersComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'communities', component: CommunitiesComponent },
+  { path: 'academic', component: AcademicComponent },
+  { path: 'corporate', component: CorporateComponent },
   { path: '' , component: HomeComponent },
-  //{ path: '' , redirectTo: '/home',  pathMatch: 'full' }, // Wildcard route for a 404 page
-  //{ path: '**', component: HomeComponent },
 
   { path: '**', component: PageNotFoundComponent },
-  //{ path: '/' , component: HomeComponent },
-
- // { path: '**', component: HomeComponent }
-  //{ path: '',   redirectTo: '/first-component', pathMatch: 'full' }, // redirect to `first-component`
-  //{ path: 'second-component', component: SecondComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

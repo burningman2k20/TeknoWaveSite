@@ -16,6 +16,9 @@ import { DownloadsComponent } from './downloads/downloads.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CommunitiesComponent } from './communities/communities.component';
+import { AcademicComponent } from './academic/academic.component';
+import { CorporateComponent } from './corporate/corporate.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DownloadsComponent,
     ContactComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CommunitiesComponent,
+    AcademicComponent,
+    CorporateComponent
   ],
   imports: [
     BrowserModule,
