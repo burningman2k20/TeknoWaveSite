@@ -11,9 +11,13 @@ const routes: Routes = [
   { path: 'champions', component: ChampionsComponent },
   { path: 'students', component: StudentsComponent },
   { path: 'home', component: HomeComponent },
+  { path: '' , component: HomeComponent },
+  //{ path: '' , redirectTo: '/home',  pathMatch: 'full' }, // Wildcard route for a 404 page
+  //{ path: '**', component: HomeComponent },
+
   { path: '**', component: PageNotFoundComponent },
   //{ path: '/' , component: HomeComponent },
-  { path: '*' , component: HomeComponent } // Wildcard route for a 404 page
+
  // { path: '**', component: HomeComponent }
   //{ path: '',   redirectTo: '/first-component', pathMatch: 'full' }, // redirect to `first-component`
   //{ path: 'second-component', component: SecondComponent },
