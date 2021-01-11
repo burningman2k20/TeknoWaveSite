@@ -1,17 +1,40 @@
 <!-- Toolbar -->
 <nav>
-    <a routerLink="../home">Home component</a>
-    <a routerLink="../champions">Champions component</a>
-    <a routerLink="../students">Students component</a>
-    <a routerLink="../partner">Partner component</a>
-    <a routerLink="../jobs">Jobs component</a>
-    <a routerLink="../about">About component</a>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="689" valign="bottom">
+                <div align="left"><img src="./assets/images/top2.jpg" width="689" height="113"></div>
+            </td>
+            <td>
+                <!-- <div align="left"><img src="./assets/images/heartbeattitle1.jpg" width="689" height="113"></div> -->
+            </td>
+            <td>
+                <div align="right"><img src="./assets/images/TeknowaveLogo.jpg" width="69" height="113" usemap="#Map2" border="0"></div>
+            </td>
+        </tr>
+    </table>
+    <!--<span align="left"><img src="./assets/images/top2.jpg" width="689" height="113"></span>
+    <span align="right"><img src="./assets/images/TeknowaveLogo.jpg" width="69" height="113" border="0"></span>-->
+    <div id="hbuttonBig">
+        <a routerLink="../home">Home component</a>
+        <a routerLink="../champions">Champions component</a>
+        <a routerLink="../students">Students component</a>
+        <a routerLink="../partner">Partner component</a>
+        <a routerLink="../jobs">Jobs component</a>
+        <a routerLink="../about">About component</a>
+        <a routerLink="../links">Links component</a>
+
+        <a routerLink="../communities" target="_self">Communities </a>
+        <a routerLink="../academic" target="_self">Academic </a>
+        <a routerLink="../corporate" target="_self">Corporate </a>
+        <a routerLink="../government" target="_self">Government </a>
+    </div>
 
 
-
-
-    <span align="left"><img src="./assets/images/top2.jpg" width="689" height="113"></span>
-    <span align="right"><img src="./assets/images/TeknowaveLogo.jpg" width="69" height="113" border="0"></span>
 </nav>
 
+
+
 <router-outlet></router-outlet>
+<app-footer></app-footer>

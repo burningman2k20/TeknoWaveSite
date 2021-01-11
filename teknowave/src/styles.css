@@ -58,10 +58,29 @@
     border-top: 0px solid #FFFFFF;
 }
 
-#hbutton a {
+#hbuttonBig a {
     color: #FFFFFF;
     background-color: #003366;
     padding: 0px 30px 0px 5px;
+    position: relative;
+    border-left: 15px solid #336699;
+    border-right: 2px solid #FFFFFF;
+    font: bold 22px Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+}
+
+#hbuttonBig a:hover {
+    border-left: 15px solid #cc0000;
+    border-right: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #FFCC00;
+}
+
+#hbutton a {
+    color: #FFFFFF;
+    background-color: #003366;
+    padding: 0px 25px 0px 5px;
     position: relative;
     border-left: 15px solid #336699;
     border-right: 2px solid #FFFFFF;

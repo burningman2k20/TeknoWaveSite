@@ -19,6 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CommunitiesComponent } from './communities/communities.component';
 import { AcademicComponent } from './academic/academic.component';
 import { CorporateComponent } from './corporate/corporate.component';
+import { GovernmentComponent } from './government/government.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { CorporateComponent } from './corporate/corporate.component';
     PageNotFoundComponent,
     CommunitiesComponent,
     AcademicComponent,
-    CorporateComponent
+    CorporateComponent,
+    GovernmentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
