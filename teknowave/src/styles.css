@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+.text-container {
+    position: relative;
+}
+
+.text-topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.student-image {
+    width: 100%;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 60% 30% 10%;
