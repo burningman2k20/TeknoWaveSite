@@ -21,6 +21,7 @@ import { AcademicComponent } from './academic/academic.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import { GovernmentComponent } from './government/government.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { NgxTypedJsModule } from 'ngx-typed-js';
 
 @NgModule({
@@ -48,7 +49,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
    // NgxTypedJsModule,
-    AppRoutingModule
+    AppRoutingModule,
+   BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
