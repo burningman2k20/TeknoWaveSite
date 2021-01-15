@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AboutComponent } from './about/about.component';
 import { ChampionsComponent } from './champions/champions.component';
 import { StudentsComponent } from './students/students.component';
@@ -22,7 +23,9 @@ import { CorporateComponent } from './corporate/corporate.component';
 import { GovernmentComponent } from './government/government.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { NgxTypedJsModule } from 'ngx-typed-js';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CeremonyComponent } from './ceremony/ceremony.component';
+import { GraduationComponent } from './graduation/graduation.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +47,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AcademicComponent,
     CorporateComponent,
     GovernmentComponent,
-    FooterComponent
+    FooterComponent,
+    CeremonyComponent,
+    GraduationComponent,
   ],
   imports: [
     BrowserModule,
    // NgxTypedJsModule,
     AppRoutingModule,
-   BrowserAnimationsModule
+   BrowserAnimationsModule,
+   NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

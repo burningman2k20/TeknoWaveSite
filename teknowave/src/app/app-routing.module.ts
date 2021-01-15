@@ -19,6 +19,9 @@ import { GovernmentComponent } from './government/government.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { LinksComponent } from './links/links.component';
 
+import { CeremonyComponent } from './ceremony/ceremony.component';
+import { GraduationComponent } from './graduation/graduation.component';
+
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'champions', component: ChampionsComponent },
@@ -32,12 +35,15 @@ const routes: Routes = [
   { path: 'corporate', component: CorporateComponent },
   { path: 'jobs', component: JobsComponent },
   { path: 'links', component: LinksComponent },
+  { path: 'ceremony' , component: CeremonyComponent },
+  { path: 'graduation', component: GraduationComponent },
   { path: '' , component: HomeComponent },
-
   { path: '**', component: PageNotFoundComponent },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

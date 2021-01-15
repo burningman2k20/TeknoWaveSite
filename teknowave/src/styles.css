@@ -1,20 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
 
+.image-fit {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    box-sizing: none;
+}
+
+.page-header {
+    font-size: 18pt;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+.image-title {
+    color: #990000;
+    font-size: 18pt;
+}
+
+.page-title {
+    color: #003366;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.news-title {
+    font-size: 14pt;
+    color: #990000
+}
+
+.news-text {
+    font-size: 12pt;
+    color:
+}
+
 .text-container {
     position: relative;
 }
 
 .text-topleft {
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: 16px;
-    font-size: 18px;
+    font-size: 16pt;
+    font-weight: bold;
     color: white;
 }
 
 .student-image {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .topPage {
@@ -28,6 +64,15 @@
     grid-gap: 0px;
     background-color: #2196F3;
     /*padding: 1px;*/
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0px;
+    grid-padding: 0px;
+    /*background-color: #2196F3;
+    padding: 1px;*/
 }
 
 .grid-container>div {
@@ -55,12 +100,17 @@ topbar {
     height: 113px;
 }
 
+.topmiddle2 {
+    width: 100%;
+    height: 144px;
+}
+
 .topright {
     width: 100%;
     height: 113px;
 }
 
-#navlist a {
+#button a {
     width: 144px;
     color: #FFFFFF;
     background-color: #003366;
@@ -71,16 +121,16 @@ topbar {
     font: bold 12px Arial, sans-serif;
     text-decoration: none;
     text-align: left;
-    margin-top: 1px;
+    margin-top: 0px;
 }
 
-#navlist a:hover {
+#button a:hover {
     border-left: 15px solid #cc0000;
     text-decoration: none;
     color: #FFCC00;
 }
 
-#navlist a:active {
+#button a:active {
     border-left: 15px solid #cc0000;
     text-decoration: none;
     color: #FFCC00;
@@ -246,7 +296,7 @@ body a:hover {
     text-decoration: none;
 }
 
-.typewriter h1 {
+.typewriter p {
     font-family: monospace;
     letter-spacing: .17em;
     margin: 0 auto;
@@ -255,6 +305,10 @@ body a:hover {
     border-right: .17em solid pink;
     animation: typing 2.5s steps(30, end), blinking-cursor .5s step-end infinite;
     animation-iteration-count: infinite;
+    text-shadow: 0 0 1px #ffffff, 0 0 10px #000000;
+    background: -webkit-linear-gradient(rgb(218, 99, 99), rgb(167, 204, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes typing {
@@ -276,5 +330,9 @@ body a:hover {
     }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0;
+    font-family: Ariel;
+    font-size: 20pt;
+    line-height: 1;
+}

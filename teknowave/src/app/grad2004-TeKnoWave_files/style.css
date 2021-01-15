@@ -1,0 +1,114 @@
+#navlist a {width: 144px;
+color: #FFFFFF;
+background-color: #003366;
+padding: 2px;
+padding-left: 3px;
+display: block;
+border-left: 15px solid #336699;
+font: bold 12px Arial, sans-serif;
+text-decoration: none;
+text-align: left;
+margin-top: 1px;}
+
+#navlist a:hover  {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#navlist a:active  {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#uberlink a:hover {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#uberlink a:active {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#uberlink a:link {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#uberlink a:visited  {border-left: 15px solid #cc0000;
+text-decoration: none;
+color: #FFCC00;}
+
+#hbuttoncontainer {width: 100%; height: 15px; background-color: #003366;
+position: relative;
+border-top: 0px solid #FFFFFF;
+}
+
+#hbutton a {color: #FFFFFF;
+background-color: #003366;
+padding: 0px 30px 0px 5px;
+position: relative;
+border-left: 15px solid #336699;
+border-right: 2px solid #FFFFFF;
+font: bold 12px Arial, sans-serif;
+text-decoration: none;
+text-align: left;}
+
+
+#hbutton a:hover {border-left: 15px solid #cc0000;
+border-right: 2px solid #FFFFFF;
+text-decoration: none;
+color: #FFCC00;}
+
+#hlink a {border-left: 15px solid #cc0000;
+border-right: 2px solid #FFFFFF;
+text-decoration: none;
+color: #FFCC00;}
+
+div.pic {float: left; height:75px; width: 75px;
+padding: 15px;
+margin:5px 3px;
+background: url(images/frame-ls.jpg) center no-repeat;}
+
+div.pic img {border: 1px solid;
+border-color: #444 #AAA #AAA #444;}
+
+div.pt {background-image: url(images/frame-pt.jpg);}
+div.ls img {background-image: url(images/frame-ls.jpg);}
+
+
+body { font-family: Verdana, Arial, sans-serif;
+font-size: 8.5px;
+text-decoration: none;
+color: #000033;}
+
+body a { font-family: Verdana, Arial, sans-serif;
+text-decoration: none;
+font: bold;
+color: #336699;}
+
+body a:hover { font-family: Verdana, Arial, sans-serif;
+text-decoration: none;
+font: bold;
+color: #FF9900;}
+
+.panel {  background-image: url(images/nav-bg.gif); background-repeat: no-repeat; background-position: 0 100%; background-attachment: fixed;
+border: 1px solid #000000;
+background-color: #FFFFFF}
+
+.panel a {color: #336699;
+padding: 0px 5px;
+margin: 5px 5px 5px 0px;
+position: relative;
+border-left: 15px solid #336699;
+border-right: 0px solid #FFFFFF;
+font: bold 12px Arial;
+text-decoration: none;
+text-align: left;}
+
+.panel a:hover {color: #FF9900;
+padding: 0px 5px;
+margin:5px 5px 5px 0px;
+position: relative;
+border-left: 15px solid #cc0000;
+border-right: 0px solid #FFFFFF;
+font: bold 12px Arial;
+text-decoration: none;
+text-align: left;}
+
+.top {background-color: #cc0000; color: #ffffff; font: bold; text-decoration: none;}

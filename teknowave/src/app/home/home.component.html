@@ -1,108 +1,35 @@
-<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
-        <tr>
-            <td valign="top">
+<body>
+    <div class="container">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" background="./assets/images/heartbeattitle1.jpg">
+            <tr>
+                <td width="69">&nbsp;</td>
+                <td height="34" valign="top"><b><p class="page-title">News</p></b></td>
+            </tr>
+        </table>
+        <ngb-accordion (panelChange)="beforeChange($event)">
+            <ngb-panel class="news-text" *ngFor="let _news of genNews.news ; let i = index" id="preventchange-{{ i }}" title="{{ _news.newsDate }} >> {{_news.newsName}}">
+                <ng-template ngbPanelContent>
+                    {{_news.newsText}}
+                    <ng-template *ngIf="_news.isLink;then showBlock; else notShowBlock">
+                    </ng-template>
 
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td width="186" valign="top" background="./assets/images/leftTile.jpg">
-                            <!-- #BeginEditable "LeftMenu" -->
-                            <!-- #EndEditable -->
+                    <ng-template #showBlock>
+                        <td>
+                            <a routerLink="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
+                            <!--<font size="4"><a href="{{link.linkURL}}">{{link.linkName}}</a></font>-->
                         </td>
-                        <td valign="top">
+                    </ng-template>
 
-                            <!-- #BeginEditable "Main" -->
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td width="2%">&nbsp;</td>
-                                    <td width="78%" valign="top"> <br>
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" background="./assets/images/heartbeattitle1.jpg">
-                                            <tr>
-                                                <td width="69">&nbsp;</td>
-                                                <td height="34" valign="top"><b><font face="Arial" size="4" color="#003366">News</font></b></td>
-                                            </tr>
-                                        </table>
-                                        <br>
-                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                            <tr>
-                                                <td width="180" valign="top">
-                                                    <div align="left">
-                                                        <p align="center"><img src="./assets/images/iceSculpture.jpg" width="160" height="150">
-                                                            <font size="2" color="#990000"><br> TeKnoWave ice sculpture</font>
-                                                        </p>
-                                                    </div>
-                                                </td>
-                                                <td valign="top">
-                                                    <p>
-                                                        <font size="2" color="#990000"><b><br>
-                          <font size="3">Wind Energy Technician Jobs On the Rise</font></b></font>
-                                                        <font size="2"><br>
-                                                            <a href="./documents/windenergytechniciajobs.pdf" target="_blank"><b>Read the article! </b></a></font>
-                                                    </p>
-                                                    <p>
-                                                        <font size="2" color="#990000"><b><font size="3">TeKnoWave</font>
-                          PILOT PROGRAM &amp; GRADUATION ENJOYS UNPARALLEL SUCCESS</b></font>
-                                                        <font size="2"><br>
-                                                            <a href="ceremony.htm" target="_self"><b>Click here
-                          to see our TeKnoSuccess! </b></a></font>
-                                                    </p>
-                                                    <p>
-                                                        <font size="2"><b><font color="#990000">CJOH and Canada
-                          AM News on <font size="3">TeKnoWave First Graduation
-                          Gala</font></font></b><br>
-                                                            <a href="video/NVEExport.mpg" target="_blank"><b><font size="2">Click
-                          here to download movie! (17mgs)</font></b></a></font>
-                                                    </p>
-                                                    <p>
-                                                        <font color="#990000"><b>TeKnoWave</b></font>
-                                                        <font size="2" color="#990000"><b>
-                          STORY, AS UNIQUE AS THE INITIATIVE ITSELF</b></font>
-                                                        <font size="2"><br>
-                                                            <a href="documents/TeKnoWave Story by Rima A and Cliff S.pdf" target="_blank"><b>Click
-                          here to find out more! (PDF version)</b></a><br>
-                                                            <a href="video/graduation_gala_RO_640x480.mpg" target="_blank"><b><font size="2">Click
-                          here to download TeKnoWave movie! (26mgs)</font></b></a></font>
-                                                    </p>
-                                                    <p>
-                                                        <font color="#990000"><b>TeKnoWave</b></font>
-                                                        <font size="2" color="#990000"><b> Renewable Energy Seminar<br>
-                              <a href="http://www.williscollege.com/TeKnoWave-Gallery/index.html" target="_blank">Click
-                        to view photos!</a></b></font>
-                                                    </p>
-                                                    <p>
-                                                        <font color="#990000"><b>TeKnoWave</b></font>
-                                                        <font size="2" color="#990000"><b>
-                          NEWS &amp; ARCHIVES<br>
-                          <a href="http://www.williscollege.com/pdf/Commanada-release.pdf" target="_blank">Click
-                          here to find out more!</a><br>
-                          </b></font><br>
-                                                        <br>
-                                                    </p>
-                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/heartbeattitle3.jpg">
-                                                        <tr>
-                                                            <td width="69">&nbsp;</td>
-                                                            <td height="34" valign="top"><b><font face="Arial" size="4" color="#003366">Scholarships</font></b></td>
-                                                        </tr>
-                                                    </table>
-                                                    <p>
-                                                        <a href="wcommanda/index.htm" target="_self"><img src="./assets/images/scholarships2.jpg" width="190" height="57" border="0"></a>
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </table>
+                    <ng-template #notShowBlock>
+                        <br>
+                        <h1>
+                            <a href="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
+                        </h1>
+                    </ng-template>
 
-                                    </td>
-                                    <td width="10%">&nbsp;</td>
-                                </tr>
-                            </table>
-                            <!-- #EndEditable --><br>
-                            <br>
-                            <p>&nbsp;</p>
-                        </td>
-                    </tr>
-                </table>
+                </ng-template>
+            </ngb-panel>
 
-
-            </td>
-        </tr>
-    </table>
+        </ngb-accordion>
+    </div>
+</body>
