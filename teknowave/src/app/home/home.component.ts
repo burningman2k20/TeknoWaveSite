@@ -40,24 +40,10 @@ export class HomeComponent implements OnInit {
     _news.newsDate = "Jan 15, 2021 @ 11:30am";
     //_news.isLink = true;
     this.genNews.news.push(_news)
-
-    /*_news = this.genNews.GenerateNews("TeKnoWave Renewable Energy Seminar","./assets/video/graduation_gala_RO_640x480.mpg");
-     _news.newsURLText ="Click here to download TeKnoWave movie! (26mgs)";
-    _news.newsDate = "Jan 15, 2021 @ 11:30am";
-    //_news.isLink = true;
-    this.genNews.news.push(_news)*/
   }
 
   public beforeChange($event: NgbPanelChangeEvent) {
 
-    /*if ($event.panelId === 'preventchange') {
-      //$event.nextState = true;
-      $event.preventDefault();
-    }
-
-    if ($event.panelId === 'preventchange' && $event.nextState === false) {
-      $event.preventDefault();
-    }*/
   }
 
 }

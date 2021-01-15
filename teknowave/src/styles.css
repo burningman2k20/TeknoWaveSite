@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+/* Used on graduation page */
+
 .image-fit {
     object-fit: fill;
     width: 100%;
@@ -7,23 +10,8 @@
     box-sizing: none;
 }
 
-.page-header {
-    font-size: 18pt;
-    font-weight: normal;
-    font-family: sans-serif;
-}
 
-.image-title {
-    color: #990000;
-    font-size: 18pt;
-}
-
-.page-title {
-    color: #003366;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 16pt;
-}
+/* Used for news in home page */
 
 .news-title {
     font-size: 14pt;
@@ -34,6 +22,19 @@
     font-size: 12pt;
     color:
 }
+
+
+/* Used for all pages */
+
+.page-title {
+    color: #003366;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+
+/* Used for top bar component */
 
 .text-container {
     position: relative;
@@ -63,7 +64,6 @@
     grid-template-columns: 60% 30% 10%;
     grid-gap: 0px;
     background-color: #2196F3;
-    /*padding: 1px;*/
 }
 
 .grid-container2 {
@@ -71,13 +71,10 @@
     grid-template-columns: 60% 40%;
     grid-gap: 0px;
     grid-padding: 0px;
-    /*background-color: #2196F3;
-    padding: 1px;*/
 }
 
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
-    /*border: 1px solid black;*/
     text-align: center;
     font-size: 30px;
 }
@@ -110,6 +107,9 @@ topbar {
     height: 113px;
 }
 
+
+/* Used for menu items */
+
 #button a {
     width: 144px;
     color: #FFFFFF;
@@ -131,30 +131,6 @@ topbar {
 }
 
 #button a:active {
-    border-left: 15px solid #cc0000;
-    text-decoration: none;
-    color: #FFCC00;
-}
-
-#uberlink a:hover {
-    border-left: 15px solid #cc0000;
-    text-decoration: none;
-    color: #FFCC00;
-}
-
-#uberlink a:active {
-    border-left: 15px solid #cc0000;
-    text-decoration: none;
-    color: #FFCC00;
-}
-
-#uberlink a:link {
-    border-left: 15px solid #cc0000;
-    text-decoration: none;
-    color: #FFCC00;
-}
-
-#uberlink a:visited {
     border-left: 15px solid #cc0000;
     text-decoration: none;
     color: #FFCC00;
@@ -296,6 +272,9 @@ body a:hover {
     text-decoration: none;
 }
 
+
+/* Used for the typewriter effect on top bar */
+
 .typewriter p {
     font-family: monospace;
     letter-spacing: .17em;
@@ -329,6 +308,9 @@ body a:hover {
         border-color: pink;
     }
 }
+
+
+/* To set font family, size, and line height for all pages */
 
 body {
     margin: 0;

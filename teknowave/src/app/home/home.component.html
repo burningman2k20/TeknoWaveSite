@@ -7,7 +7,7 @@
             </tr>
         </table>
         <ngb-accordion (panelChange)="beforeChange($event)">
-            <ngb-panel class="news-text" *ngFor="let _news of genNews.news ; let i = index" id="preventchange-{{ i }}" title="{{ _news.newsDate }} >> {{_news.newsName}}">
+            <ngb-panel class="news-title" *ngFor="let _news of genNews.news ; let i = index" id="preventchange-{{ i }}" title="{{ _news.newsDate }} >> {{_news.newsName}}">
                 <ng-template ngbPanelContent>
                     {{_news.newsText}}
                     <ng-template *ngIf="_news.isLink;then showBlock; else notShowBlock">
@@ -15,15 +15,14 @@
 
                     <ng-template #showBlock>
                         <td>
-                            <a routerLink="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
-                            <!--<font size="4"><a href="{{link.linkURL}}">{{link.linkName}}</a></font>-->
+                            <a class="news-text" routerLink="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
                         </td>
                     </ng-template>
 
                     <ng-template #notShowBlock>
                         <br>
                         <h1>
-                            <a href="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
+                            <a class="news-text" href="{{ _news.newsURL }}"> {{ _news.newsURLText }}</a>
                         </h1>
                     </ng-template>
 

@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CeremonyComponent } from './ceremony/ceremony.component';
 import { GraduationComponent } from './graduation/graduation.component';
+import { BoardofdirectorsComponent } from './boardofdirectors/boardofdirectors.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { GraduationComponent } from './graduation/graduation.component';
     FooterComponent,
     CeremonyComponent,
     GraduationComponent,
+    BoardofdirectorsComponent,
   ],
   imports: [
     BrowserModule,
